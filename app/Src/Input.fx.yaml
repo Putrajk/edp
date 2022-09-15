@@ -10,16 +10,16 @@ Input As screen:
             Size: =21
             Text: ="Tanggal"
             Width: =126
-            X: =40
-            Y: =156
+            X: =67
+            Y: =32
             ZIndex: =3
 
         DatePicker1 As datepicker:
             Height: =70
             Size: =24
             Width: =296
-            X: =205
-            Y: =156
+            X: =232
+            Y: =32
             ZIndex: =5
 
         Label4_2 As label:
@@ -27,8 +27,8 @@ Input As screen:
             Size: =21
             Text: ="Jenis Dokumen"
             Width: =180
-            X: =16
-            Y: =266
+            X: =43
+            Y: =142
             ZIndex: =6
 
         Dropdown1 As dropdown:
@@ -37,8 +37,8 @@ Input As screen:
             Items: =["LDP","M01","M02","Berita Acara","Surat","Surat Tugas","Faksimili","Risalah"]
             Size: =21
             Width: =348
-            X: =205
-            Y: =266
+            X: =232
+            Y: =142
             ZIndex: =7
 
         Label4_3 As label:
@@ -46,8 +46,8 @@ Input As screen:
             Size: =21
             Text: ="Sifat Dokumen"
             Width: =149
-            X: =16
-            Y: =376
+            X: =43
+            Y: =252
             ZIndex: =8
 
         Dropdown1_1 As dropdown:
@@ -56,8 +56,8 @@ Input As screen:
             Items: =["Rahasia","Biasa"]
             Size: =21
             Width: =348
-            X: =205
-            Y: =376
+            X: =232
+            Y: =252
             ZIndex: =9
 
         Label4_4 As label:
@@ -65,8 +65,8 @@ Input As screen:
             Size: =21
             Text: ="Perihal"
             Width: =126
-            X: =40
-            Y: =496
+            X: =67
+            Y: =372
             ZIndex: =10
 
         TextInput1_1 As text:
@@ -74,8 +74,8 @@ Input As screen:
             Height: =131
             Size: =21
             Width: =348
-            X: =205
-            Y: =496
+            X: =232
+            Y: =372
             ZIndex: =11
 
         Label4_5 As label:
@@ -83,8 +83,8 @@ Input As screen:
             Size: =21
             Text: ="Pejabat Pengesah"
             Width: =149
-            X: =28
-            Y: =742
+            X: =55
+            Y: =618
             ZIndex: =12
 
         Dropdown1_2 As dropdown:
@@ -93,8 +93,8 @@ Input As screen:
             Items: =["putra","Yosa","Frans"]
             Size: =21
             Width: =348
-            X: =205
-            Y: =742
+            X: =232
+            Y: =618
             ZIndex: =13
 
         Label4_6 As label:
@@ -102,8 +102,8 @@ Input As screen:
             Size: =21
             Text: ="Unit"
             Width: =149
-            X: =28
-            Y: =649
+            X: =55
+            Y: =525
             ZIndex: =14
 
         Dropdown1_3 As dropdown:
@@ -112,8 +112,8 @@ Input As screen:
             Items: =["SPPUR","UMI","FK3","FPPU"]
             Size: =21
             Width: =348
-            X: =205
-            Y: =649
+            X: =232
+            Y: =525
             ZIndex: =15
 
         Button2 As button:
@@ -135,20 +135,87 @@ Input As screen:
             Y: =970
             ZIndex: =20
 
-        Icon1 As icon.AddDocument:
-            Height: =74
-            Icon: =Icon.AddDocument
-            Width: =100
-            X: =52
-            Y: =856
-            ZIndex: =21
+        Form2_1 As form:
+            DataSource: =EDPS
+            DefaultMode: =FormMode.New
+            Height: =303
+            Width: =580
+            X: =32
+            Y: =706
+            ZIndex: =23
 
-        Label4_8 As label:
-            Height: =70
-            Size: =21
-            Text: ="Upload Dokumen"
-            Width: =249
-            X: =152
-            Y: =860
-            ZIndex: =22
+            file_DataCard1_1 As typedDataCard.fileEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="creb2_file"
+                Default: |-
+                    =If(!IsBlank(ThisItem.file.FileName), Table({DisplayName: ThisItem.file.FileName, Value: ThisItem.file.Value}), Blank())
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@EDPS],DataSourceInfo.DisplayName,"creb2_file")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =false
+                Update: =DataCardValue3_1.Attachments
+                Width: =580
+                X: =0
+                Y: =0
+                ZIndex: =1
+
+                DataCardKey3_1 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue3_1 As attachments:
+                    AddAttachmentText: ="Upload file"
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =170
+                    IsInDataCard: =true
+                    Items: =Parent.Default
+                    MaxAttachments: =1
+                    MaxAttachmentsText: =""
+                    NoAttachmentsText: ="There is no file."
+                    PaddingBottom: =5
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    PaddingRight: =5
+                    PaddingTop: =5
+                    Size: =21
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =86
+                    ZIndex: =2
+
+                ErrorMessage2_1 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =24
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue3_1.Y + DataCardValue3_1.Height
+                    ZIndex: =3
+
+                StarVisible2_1 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey3_1.Height
+                    Size: =21
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey3_1.Y
+                    ZIndex: =4
 
