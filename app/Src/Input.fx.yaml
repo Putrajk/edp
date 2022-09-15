@@ -119,7 +119,7 @@ Input As screen:
         Button2 As button:
             Height: =63
             OnSelect: |-
-                =Patch(EDPS,Defaults(EDPS),{tanggal:DatePicker1.SelectedDate,'Jenis Dokumen':Dropdown1.Selected.Value,'Sifat Dokumen':Dropdown1_1.Selected.Value,perihal:TextInput1_1.Text,Unit:Dropdown1_3.Selected.Value,pejabat:Dropdown1_2.Selected.Value},Form2.Updates)
+                =Patch(EDPS,Defaults(EDPS),{tanggal:DatePicker1.SelectedDate,'Jenis Dokumen':Dropdown1.Selected.Value,'Sifat Dokumen':Dropdown1_1.Selected.Value,perihal:TextInput1_1.Text,Unit:Dropdown1_3.Selected.Value,pejabat:Dropdown1_2.Selected.Value},file.Updates)
             Size: =24
             Text: ="Submit"
             X: =212
@@ -135,10 +135,10 @@ Input As screen:
             Y: =970
             ZIndex: =20
 
-        Form2_1 As form:
+        file As form:
             DataSource: =EDPS
             DefaultMode: =FormMode.New
-            Height: =303
+            Height: =226
             Width: =580
             X: =32
             Y: =706

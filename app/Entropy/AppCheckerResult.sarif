@@ -312,19 +312,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Input.Container2.Form2_1.file_DataCard1_1.DataCardValue3_1.AccessibleLabel"
+                  "fullyQualifiedName": "Input.Container2.file.file_DataCard1_1.DataCardValue3_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Input.Container2.Form2_1.file_DataCard1_1.DataCardValue3_1.AccessibleLabel",
+                  "fullyQualifiedName": "Input.Container2.file.file_DataCard1_1.DataCardValue3_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Input",
-                "type": "Input.Container2.Form2_1.file_DataCard1_1.DataCardValue3_1"
+                "type": "Input.Container2.file.file_DataCard1_1.DataCardValue3_1"
               }
             }
           ],
