@@ -90,7 +90,7 @@ Input As screen:
         Dropdown1_2 As dropdown:
             Default: ="Pilih"
             Height: =70
-            Items: =[""]
+            Items: =["putra","Yosa","Frans"]
             Size: =21
             Width: =348
             X: =205
