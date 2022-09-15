@@ -5,24 +5,6 @@ Input As screen:
         Width: =640
         ZIndex: =1
 
-        Label4 As label:
-            Height: =70
-            Size: =21
-            Text: ="No Surat"
-            Width: =126
-            X: =40
-            Y: =53
-            ZIndex: =1
-
-        TextInput1 As text:
-            Default: ="Auto dari sistem"
-            Height: =70
-            Size: =21
-            Width: =296
-            X: =205
-            Y: =53
-            ZIndex: =2
-
         Label4_1 As label:
             Height: =70
             Size: =21
@@ -52,7 +34,7 @@ Input As screen:
         Dropdown1 As dropdown:
             Default: ="Pilih"
             Height: =70
-            Items: =DropDownSample
+            Items: =["LDP","M01","M02","Berita Acara","Surat","Surat Tugas","Faksimili","Risalah"]
             Size: =21
             Width: =348
             X: =205
@@ -71,7 +53,7 @@ Input As screen:
         Dropdown1_1 As dropdown:
             Default: ="Pilih"
             Height: =70
-            Items: =DropDownSample
+            Items: =["Rahasia","Biasa"]
             Size: =21
             Width: =348
             X: =205
@@ -88,7 +70,7 @@ Input As screen:
             ZIndex: =10
 
         TextInput1_1 As text:
-            Default: ="Auto dari sistem"
+            Default: =
             Height: =131
             Size: =21
             Width: =348
@@ -108,7 +90,7 @@ Input As screen:
         Dropdown1_2 As dropdown:
             Default: ="Pilih"
             Height: =70
-            Items: =DropDownSample
+            Items: =[""]
             Size: =21
             Width: =348
             X: =205
@@ -127,7 +109,7 @@ Input As screen:
         Dropdown1_3 As dropdown:
             Default: ="Pilih"
             Height: =70
-            Items: =DropDownSample
+            Items: =["SPPUR","UMI","FK3","FPPU"]
             Size: =21
             Width: =348
             X: =205
