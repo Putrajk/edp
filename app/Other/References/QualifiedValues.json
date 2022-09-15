@@ -6,6 +6,13 @@
       "Values": {
         "Information": "f4b7c2fc-44a3-4e39-9feb-8c74f35dec54"
       }
+    },
+    {
+      "Kind": "default.cds_businessunit_forms",
+      "Namespace": "Business Units (Forms)",
+      "Values": {
+        "Information": "ca8dfced-338c-43b2-b212-83745e257c28"
+      }
     }
   ]
 }

@@ -25,9 +25,9 @@ Input As screen:
         Label4_2 As label:
             Height: =70
             Size: =21
-            Text: ="Dokumen"
-            Width: =156
-            X: =40
+            Text: ="Jenis Dokumen"
+            Width: =180
+            X: =16
             Y: =266
             ZIndex: =6
 
@@ -44,7 +44,7 @@ Input As screen:
         Label4_3 As label:
             Height: =70
             Size: =21
-            Text: ="Jenis Dokumen"
+            Text: ="Sifat Dokumen"
             Width: =149
             X: =16
             Y: =376
@@ -118,6 +118,8 @@ Input As screen:
 
         Button2 As button:
             Height: =63
+            OnSelect: |-
+                =Patch(EDPS,Defaults(EDPS),{tanggal:DatePicker1.SelectedDate,'Jenis Dokumen':Dropdown1.Selected.Value,'Sifat Dokumen':Dropdown1_1.Selected.Value,perihal:TextInput1_1.Text,Unit:Dropdown1_3.Selected.Value,pejabat:Dropdown1_2.Selected.Value})
             Size: =24
             Text: ="Submit"
             X: =212
