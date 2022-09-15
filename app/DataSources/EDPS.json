@@ -1,0 +1,95 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "creb2_edps",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "creb2_edp",
+    "MaxGetRowsCount": 500,
+    "Name": "EDPS",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "creb2_edp_AsyncOperations": "System Jobs",
+      "creb2_edp_BulkDeleteFailures": "Bulk Delete Failures",
+      "creb2_edp_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "creb2_edp_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "creb2_edp_ProcessSession": "Process Sessions",
+      "creb2_edp_SyncErrors": "Sync Errors",
+      "creb2_edpid": "EDP",
+      "creb2_name": "Name",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "EDPS",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "EDPS (Views)",
+    "Name": "_creb2_edp_views",
+    "RelatedEntityName": "EDPS",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "4264854c-f3b0-4489-a16d-7057437355a5": "EDP Associated View",
+      "508b2c93-8b65-489b-801a-80b95bc94cde": "EDP Lookup View",
+      "627bf3c9-06b3-40bd-862f-c553ac8a8aee": "Inactive EDPS",
+      "d343b1dc-9de1-4a24-bf08-72f45e1f9cdb": "Active EDPS",
+      "e797a80e-5056-4c7d-b35f-8fb53097f69c": "EDP Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Status (EDPS)",
+    "Name": "creb2_edp_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "EDPS"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "EDPS",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (EDPS)",
+    "Name": "creb2_edp_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "EDPS"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "EDPS",
+    "Type": "OptionSetInfo"
+  }
+]

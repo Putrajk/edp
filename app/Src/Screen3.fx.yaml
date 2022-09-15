@@ -1,0 +1,39 @@
+Screen3 As screen:
+
+    Container3 As groupContainer.manualLayoutContainer:
+        Height: =1136
+        Width: =640
+        ZIndex: =1
+
+        Label4_7 As label:
+            Height: =70
+            Size: =21
+            Text: ="No Surat"
+            Width: =126
+            X: =40
+            Y: =40
+            ZIndex: =1
+
+        TextInput1_2 As text:
+            Default: =""
+            Height: =70
+            Size: =21
+            Width: =296
+            X: =228
+            Y: =40
+            ZIndex: =2
+
+        Button3 As button:
+            Height: =70
+            Size: =24
+            Text: ="Cari"
+            Width: =280
+            X: =166
+            Y: =162
+            ZIndex: =3
+
+    FormViewer1 As formViewer:
+        Width: =640
+        Y: =436
+        ZIndex: =2
+

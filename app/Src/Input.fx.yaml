@@ -1,0 +1,170 @@
+Input As screen:
+
+    Container2 As groupContainer.manualLayoutContainer:
+        Height: =1136
+        Width: =640
+        ZIndex: =1
+
+        Label4 As label:
+            Height: =70
+            Size: =21
+            Text: ="No Surat"
+            Width: =126
+            X: =40
+            Y: =53
+            ZIndex: =1
+
+        TextInput1 As text:
+            Default: ="Auto dari sistem"
+            Height: =70
+            Size: =21
+            Width: =296
+            X: =205
+            Y: =53
+            ZIndex: =2
+
+        Label4_1 As label:
+            Height: =70
+            Size: =21
+            Text: ="Tanggal"
+            Width: =126
+            X: =40
+            Y: =156
+            ZIndex: =3
+
+        DatePicker1 As datepicker:
+            Height: =70
+            Size: =24
+            Width: =296
+            X: =205
+            Y: =156
+            ZIndex: =5
+
+        Label4_2 As label:
+            Height: =70
+            Size: =21
+            Text: ="Dokumen"
+            Width: =156
+            X: =40
+            Y: =266
+            ZIndex: =6
+
+        Dropdown1 As dropdown:
+            Default: ="Pilih"
+            Height: =70
+            Items: =DropDownSample
+            Size: =21
+            Width: =348
+            X: =205
+            Y: =266
+            ZIndex: =7
+
+        Label4_3 As label:
+            Height: =70
+            Size: =21
+            Text: ="Jenis Dokumen"
+            Width: =149
+            X: =16
+            Y: =376
+            ZIndex: =8
+
+        Dropdown1_1 As dropdown:
+            Default: ="Pilih"
+            Height: =70
+            Items: =DropDownSample
+            Size: =21
+            Width: =348
+            X: =205
+            Y: =376
+            ZIndex: =9
+
+        Label4_4 As label:
+            Height: =70
+            Size: =21
+            Text: ="Perihal"
+            Width: =126
+            X: =40
+            Y: =496
+            ZIndex: =10
+
+        TextInput1_1 As text:
+            Default: ="Auto dari sistem"
+            Height: =131
+            Size: =21
+            Width: =348
+            X: =205
+            Y: =496
+            ZIndex: =11
+
+        Label4_5 As label:
+            Height: =70
+            Size: =21
+            Text: ="Pejabat Pengesah"
+            Width: =149
+            X: =28
+            Y: =742
+            ZIndex: =12
+
+        Dropdown1_2 As dropdown:
+            Default: ="Pilih"
+            Height: =70
+            Items: =DropDownSample
+            Size: =21
+            Width: =348
+            X: =205
+            Y: =742
+            ZIndex: =13
+
+        Label4_6 As label:
+            Height: =70
+            Size: =21
+            Text: ="Unit"
+            Width: =149
+            X: =28
+            Y: =649
+            ZIndex: =14
+
+        Dropdown1_3 As dropdown:
+            Default: ="Pilih"
+            Height: =70
+            Items: =DropDownSample
+            Size: =21
+            Width: =348
+            X: =205
+            Y: =649
+            ZIndex: =15
+
+        Button2 As button:
+            Height: =63
+            Size: =24
+            Text: ="Submit"
+            X: =212
+            Y: =970
+            ZIndex: =16
+
+        Button2_1 As button:
+            Height: =63
+            OnSelect: =Navigate(Pegawai)
+            Size: =24
+            Text: ="Cancel"
+            X: =420
+            Y: =970
+            ZIndex: =20
+
+        Icon1 As icon.AddDocument:
+            Height: =74
+            Icon: =Icon.AddDocument
+            Width: =100
+            X: =52
+            Y: =856
+            ZIndex: =21
+
+        Label4_8 As label:
+            Height: =70
+            Size: =21
+            Text: ="Upload Dokumen"
+            Width: =249
+            X: =152
+            Y: =860
+            ZIndex: =22
+
