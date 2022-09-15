@@ -119,7 +119,7 @@ Input As screen:
         Button2 As button:
             Height: =63
             OnSelect: |-
-                =Patch(EDPS,Defaults(EDPS),{tanggal:DatePicker1.SelectedDate,'Jenis Dokumen':Dropdown1.Selected.Value,'Sifat Dokumen':Dropdown1_1.Selected.Value,perihal:TextInput1_1.Text,Unit:Dropdown1_3.Selected.Value,pejabat:Dropdown1_2.Selected.Value})
+                =Patch(EDPS,Defaults(EDPS),{tanggal:DatePicker1.SelectedDate,'Jenis Dokumen':Dropdown1.Selected.Value,'Sifat Dokumen':Dropdown1_1.Selected.Value,perihal:TextInput1_1.Text,Unit:Dropdown1_3.Selected.Value,pejabat:Dropdown1_2.Selected.Value},Form2.Updates)
             Size: =24
             Text: ="Submit"
             X: =212
@@ -152,7 +152,7 @@ Input As screen:
                 DisplayMode: =Parent.DisplayMode
                 DisplayName: =DataSourceInfo([@EDPS],DataSourceInfo.DisplayName,"creb2_file")
                 Fill: =RGBA(0, 0, 0, 0)
-                Height: =50
+                Height: =236
                 Required: =false
                 Update: =DataCardValue3_1.Attachments
                 Width: =580
@@ -160,22 +160,11 @@ Input As screen:
                 Y: =0
                 ZIndex: =1
 
-                DataCardKey3_1 As label:
-                    AutoHeight: =true
-                    Height: =48
-                    Size: =21
-                    Text: =Parent.DisplayName
-                    Width: =Parent.Width - 60
-                    Wrap: =false
-                    X: =30
-                    Y: =10
-                    ZIndex: =1
-
                 DataCardValue3_1 As attachments:
                     AddAttachmentText: ="Upload file"
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                     DisplayMode: =Parent.DisplayMode
-                    Height: =170
+                    Height: =172
                     IsInDataCard: =true
                     Items: =Parent.Default
                     MaxAttachments: =1
@@ -188,8 +177,6 @@ Input As screen:
                     Size: =21
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
-                    X: =30
-                    Y: =86
                     ZIndex: =2
 
                 ErrorMessage2_1 As label:
@@ -210,12 +197,12 @@ Input As screen:
 
                 StarVisible2_1 As label:
                     Align: =Align.Center
-                    Height: =DataCardKey3_1.Height
+                    Height: =
                     Size: =21
                     Text: ="*"
                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                     Width: =30
                     Wrap: =false
-                    Y: =DataCardKey3_1.Y
+                    Y: =
                     ZIndex: =4
 
